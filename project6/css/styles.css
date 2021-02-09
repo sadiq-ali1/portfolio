@@ -1,0 +1,195 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 85%;
+    margin: 0px auto;
+    /* border: 1px solid red; */
+}
+
+/* client section start here */
+#client{
+    background-color: #d6cfcf;
+}
+#client .main{
+    padding: 100px 0px;
+}
+#client .client-content{
+    text-align: center;
+}
+#client .client-content h2{
+    text-transform: capitalize;
+    font-size: 50px;
+}
+#client .client-content p{
+    font-size: 30px;
+    word-spacing: 5px;
+}
+#client .image {
+    text-align: center;
+}
+#client .image .icon {
+    font-size: 20px;
+    padding-top: 60px;
+}
+#client .image .client-img{
+    /* padding-top: 80px; */
+    padding: 20px 0px;
+}
+#client .image .client-img img {
+    border-radius: 50%;
+    width: 10%;
+}
+#client .image .image-content p{
+    font-size: 25px;
+}
+#client .image .image-content h2 {
+    font-size: 35px;
+    padding: 20px 0px;
+}
+#client .image .image-content h4 {
+    font-size: 35px;
+    color: red;
+}
+/* client section End here */
+
+/* work section start here */
+#our-work .main{
+    padding: 80px 0px;
+    text-align: center;
+}
+#our-work .main .work-content h2{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+#our-work .main .work-content p {
+    font-size: 30px;
+}
+#our-work .main .work-content .navbar ul .home{
+    /* border: 1px solid black; */
+    width: 8%;
+    background-color:#e91e63;
+    border-radius: 20px;
+}
+#our-work .main .work-content .navbar ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+#our-work .main .work-content .navbar ul li{
+    margin-left: 30px;
+    text-transform: capitalize;
+    font-size: 25px;
+    list-style: none;
+}
+#our-work .main .work-content .navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+#our-work .main .image-boxes{
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 30px;
+}
+#our-work .main .image-boxes .box1{
+    background-image: url(../images/cld.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 28.3%;
+    height: 300px;
+    /* border: 1px solid black; */
+}
+#our-work .main .image-boxes .box2{
+    background-image: url(../images/clock.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 28.3%;
+    height: 300px;
+    /* border: 1px solid black; */
+    
+}
+#our-work .main .image-boxes .box3{
+    background-image: url(../images/25.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 28.3%;
+    height: 300px;
+    /* border: 1px solid black; */
+}
+/* work section End here */
+
+
+ /* section three start here */
+ #sec-three {
+     background-color: #d6cfcf; 
+ }
+ #sec-three .main-top{
+     padding: 80px 0px;
+}
+ #sec-three .main{
+     text-align: center;
+ }
+#sec-three .our-blogs h2{
+     text-transform: capitalize;
+     font-size: 50px;
+ }
+#sec-three .main .our-blogs p{
+    font-size: 30px;
+}
+#sec-three .blog-boxes{
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 30px;
+}
+#sec-three .blog-boxes .boxOne{
+    width: 28.3%;
+    border: 3px solid #f1e9e9;
+    height: 500px;
+    background-color: white
+
+}
+#sec-three .blog-boxes .boxOne h2{
+    font-size: 30px;
+    padding-top: 20px;
+}
+#sec-three .blog-boxes .boxOne h4{
+    font-size: 30px;
+    line-height: 50px;
+}
+#sec-three .blog-boxes .boxOne p{
+    font-size: 30px;
+    word-spacing: 5px;
+}
+/* hover start here */
+
+#our-work .main .image-boxes box1:hover img{ 
+    transform: perspective(500px) rotateX(50deg); }
+#our-work .main .image-boxes box1{
+    color: #fff;
+    background: linear-gradient(to right, rgba(52,143,80,0.8), rgba(86,180,211,0.8));
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform-origin: top center;
+    transform: perspective(500px) rotateX(-50deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+#our-work .main .image-boxes:hover  box1{
+    opacity: 1;
+    transform: perspective(500px) rotateX(0);
+}
+/* hover End here */
+  /* section three End here */
+  @media(max-width: 992px){
+    #our-work .main .work-content .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+  }
